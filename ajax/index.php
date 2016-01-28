@@ -33,11 +33,13 @@ $gestorCountry = new ManageCountry($bd);
                             <input type="text" id="District" value="" /><hr>
                             Poblacion
                             <input type="number" id="Population" value="" /><hr>
+                            <input type="hidden" id="ID" value="" /><hr>
                         </form>
                     </div>
                     <div id="mensajeInsertar" ></div>
                     <div class="modal-footer">
                         <button id="btInsertar" type="button" class="btn btn-default" >Insert</button>
+                        <button id="btEditar" type="button" class="btn btn-default" >Edit</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -107,7 +109,7 @@ $gestorCountry = new ManageCountry($bd);
                 <a href="#" id="anterior" >Anterior</a>
                 <a href="#" id="siguiente" >Siguiente</a>
                 <a href="#" id="insertar" >Insertar</a>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#formularioInsertar">Insertar</button>
+                <button id="botonInsertarDialog" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#formularioInsertar">Insertar</button>
                 <br/>
             </div>
             <hr>
